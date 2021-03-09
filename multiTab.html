@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>멀티탭 구현</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="library/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <h1>Multi-Tap 구현</h1>
+
+        <div id="tabArea">
+            <button type="button">공지사항</button>
+            <button type="button">갤러리</button>
+
+            <div id="tabContent1">
+               <ul id="bbsNotice">
+                   <li>
+                   <span>2018하반기 직원채용</span>
+                   <span>2018-09-02</span>
+                   </li>
+
+                   <li>
+                   <span>입금자를 찾습니다.</span>
+                   <span>2018-09-03</span>
+                   </li>
+
+                   <li>
+                   <span>8월 런칭 이벤트 회원 모집</span>
+                   <span>2019-02-08</span>
+                   </li>
+
+                   <li>
+                   <span>1+1 행사를 진행합니다.</span>
+                   <span>2019-02-03</span>
+                   </li>
+               </ul>
+            </div> <!--div#tabContent1-->
+
+            <div id="tabContent2">
+                <a href="#"><img src="images/gallery_01_90x90.jpg" alt="이미지1" width="116"></a>
+                <a href="#"><img src="images/gallery_02_90x90.jpg" alt="이미지2" width="116"></a>
+                <a href="#"><img src="images/gallery_03_90x90.jpg" alt="이미지3" width="116"></a>
+            </div><!--div#tabContent2-->
+        </div><!--div#tabArea-->
+    </div> <!--div#wrap-->
+</body>
+
+</html>

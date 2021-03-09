@@ -1,0 +1,109 @@
+@charset  "utf-8";
+
+/* Reset */
+*{
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a     { text-decoration: none; }
+a:link     { color: #333; }
+a:visited     { color: #333; }
+a:hover     { color: #444; }
+a:active     { color: #555; }
+
+ul            {     list-style: none;     }
+/* Reset */
+
+
+div#wrap{
+    width: 460px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 멀티탭 시작 */
+
+/* 멀티탭 공통 작업 시작 */
+div#tabArea{   /* 탭버튼과 탭내용을 둘러싼 외부 */
+    width: 400px;
+    padding: 10px;
+    /*border: 1px solid #08f;*/
+    margin: 10px;
+}
+
+button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+
+    position: relative;
+    top: 1px;
+}
+
+button:first-child {
+    margin-left: 30px;
+}
+
+div#tabArea > div {
+    border: 1px solid #aaa;
+    padding: 24px 10px;
+
+    display: inline-block;
+}
+/* 멀티탭 공통 작업 끝 */
+
+
+/* 공지사항 영역 */
+/*#tabArea #tabContent1 #bbsNotice span{ 첫번째 기재는 왠만하면 다 적음
+   border: 1px solid #000;
+}*/
+
+div#tabArea #tabContent1{
+ padding: 6px 26px 6px 16px;
+}
+
+#tabArea #tabContent1 #bbsNotice>li{
+    line-height: 32px;
+}
+
+#tabArea span:first-child {
+    width: 230px;
+
+    display: inline-block;
+}
+/* 공지사항 영역 */
+
+/* 갤러리 영역 */
+#tabArea #tabContent2{
+    text-align: center;
+}
+img{
+    vertical-align: middle; /*기본값 이미지 위쪽 배치 */
+}
+/* 갤러리 영역 */
+
+
+/* 멀티탭 클릭 기능 구현 */
+button:nth-child(2){
+    border: none;
+    top: 0;
+    left: -6px;
+}
+
+#tabArea #tabContent2{
+    display: none;
+}
+
+/* 멀티탭 클릭 기능 구현 */
+
+/*멀티탭 끝*/
+
+
+
+
