@@ -60,9 +60,9 @@ div#tabArea > div {
 
 
 /* 공지사항 영역 */
-/*#tabArea #tabContent1 #bbsNotice span{ 첫번째 기재는 왠만하면 다 적음
-   border: 1px solid #000;
-}*/
+#tabArea #tabContent1 #bbsNotice li:first-child span{ /*첫번째 기재는 왠만하면 다 적음*/
+   cursor: pointer;
+}
 
 div#tabArea #tabContent1{
  padding: 6px 26px 6px 16px;
@@ -104,6 +104,53 @@ button:nth-child(2){
 
 /*멀티탭 끝*/
 
+/*모달레이어팝업 영역*/
+
+/* 배경레이어*/
+div#modalLayerBG{
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+} /* 배경레이어*/
+
+
+/*팝업레이어*/
+div#modalPopup{
+    min-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+
+   transform:translate(-50%, -50%);
+
+    position :absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#modalPopup ul{
+    list-style: disc; /*불릿기호*/
+    list-style-position: inside; /*내어쓰기*/
+    margin: 20px 10px;
+    line-height: 24px;/*글씨줄간격*/
+}
+
+#modalPopup button#closeBtn{
+    border: 1px solid #aaa;
+    cursor: pointer;
+    position: absolute;
+    right:30px;
+    top: 75%;
+    height: 40px;
+}
+    /*팝업레이어*/
+
+/*모달레이어팝업 영역*/
 
 
 
